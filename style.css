@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    color: snow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    border-radius: 50px;
+    transition: all 1s ease;
+    flex: 0.5;
+}
+.panel h3{
+    opacity: 0;
+}
+.panel:hover{
+    flex: 3;
+}
+.panel:hover h3{
+    opacity: 1;
+    transition: 0.5s ease-in 0.5s;
+}
